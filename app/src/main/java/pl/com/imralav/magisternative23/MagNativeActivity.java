@@ -1,6 +1,7 @@
 package pl.com.imralav.magisternative23;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Point;
 import android.os.Bundle;
