@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="pl.com.imralav.magisternative23.CameraCheckActivity">
@@ -18,8 +19,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:src="@android:drawable/ic_menu_search"
-            android:onClick="goToDataCheck" />
+            android:onClick="goToDataCheck"
+            android:src="@android:drawable/ic_menu_search" />
 
         <TextView
             android:id="@+id/textView8"
@@ -27,15 +28,15 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="@string/camera_check"/>
+            android:text="@string/camera_check" />
 
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_below="@id/navigationPanel">
+        android:layout_below="@id/navigationPanel"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView"
@@ -43,23 +44,23 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/front_camera"
-            android:textAlignment="center"/>
+            android:textAlignment="center" />
 
         <SurfaceView
             android:id="@+id/frontCamView"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_weight="1"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:layout_weight="1" />
 
         <ImageButton
             android:id="@+id/swapCamerasButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@android:drawable/ic_popup_sync"
             android:layout_gravity="center"
-            android:onClick="swapCameras"/>
+            android:layout_weight="1"
+            android:onClick="swapCameras"
+            android:src="@android:drawable/ic_popup_sync" />
 
         <TextView
             android:id="@+id/textView2"
@@ -67,13 +68,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/back_camera"
-            android:textAlignment="center"/>
+            android:textAlignment="center" />
 
         <SurfaceView
             android:id="@+id/backCamView"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_weight="1"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:layout_weight="1" />
     </LinearLayout>
 </RelativeLayout>
